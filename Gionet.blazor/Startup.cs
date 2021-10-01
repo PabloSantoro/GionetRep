@@ -1,7 +1,9 @@
 using Gionet.blazor.Data;
+using Gionet.blazor.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +30,12 @@ namespace Gionet.blazor
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            var connectionString = "server=31.170.161.85;user=u598002034_TkvUc;password=Puertas3489*;database=u598002034_fnZfT";
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 25));
+            ServerVersion.AutoDetect(connectionString);
+
+            // Replace 'YourDbContext' with the name of your own DbContext derived class.
+            services.AddDbContext<u598002034_fnZfTContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion).EnableSensitiveDataLogging().EnableDetailedErrors());     // <-- with debugging (remove for production).
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
