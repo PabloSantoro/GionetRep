@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Auxiliar\\source\\repos\\Gionet1\\giogit\\Gionet.blazor\\Gionet.blazor.csproj": {}
+    "C:\\Users\\Auxiliar\\source\\repos\\GionetRep\\Gionet.blazor\\Gionet.blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Auxiliar\\source\\repos\\Gionet1\\giogit\\Gionet.blazor\\Gionet.blazor.csproj": {
+    "C:\\Users\\Auxiliar\\source\\repos\\GionetRep\\Gionet.blazor\\Gionet.blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Auxiliar\\source\\repos\\Gionet1\\giogit\\Gionet.blazor\\Gionet.blazor.csproj",
+        "projectUniqueName": "C:\\Users\\Auxiliar\\source\\repos\\GionetRep\\Gionet.blazor\\Gionet.blazor.csproj",
         "projectName": "Gionet.blazor",
-        "projectPath": "C:\\Users\\Auxiliar\\source\\repos\\Gionet1\\giogit\\Gionet.blazor\\Gionet.blazor.csproj",
+        "projectPath": "C:\\Users\\Auxiliar\\source\\repos\\GionetRep\\Gionet.blazor\\Gionet.blazor.csproj",
         "packagesPath": "C:\\Users\\Auxiliar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Auxiliar\\source\\repos\\Gionet1\\giogit\\Gionet.blazor\\obj\\",
+        "outputPath": "C:\\Users\\Auxiliar\\source\\repos\\GionetRep\\Gionet.blazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,4 +1,5 @@
 using Gionet.blazor.Data;
+using Gionet.blazor.Data.Services;
 using Gionet.blazor.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
@@ -35,7 +36,10 @@ namespace Gionet.blazor
             ServerVersion.AutoDetect(connectionString);
 
             // Replace 'YourDbContext' with the name of your own DbContext derived class.
-            services.AddDbContext<u598002034_fnZfTContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion).EnableSensitiveDataLogging().EnableDetailedErrors());     // <-- with debugging (remove for production).
+            services.AddDbContext<u598002034_fnZfTContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion).EnableSensitiveDataLogging().EnableDetailedErrors(),    // <-- with debugging (remove for production).
+            ServiceLifetime.Transient);
+            services.AddTransient<u598002034_fnZfTContext>();
+            services.AddTransient<Clientesclass>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
